@@ -5,7 +5,6 @@
     <title>Document</title>
   </head>
   <body>
-    This is extra page
     <?php
     function sanitizeText(string $text): string {
       while (str_contains($text, "  ")) {

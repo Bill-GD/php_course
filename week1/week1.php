@@ -14,12 +14,12 @@ function showIntListWithColors() {
   }
 }
 
-function sanitizeText(string $text): string {
-  while (str_contains($text, "  ")) {
-    $text = str_replace("  ", " ", $text);
-  }
-  return trim($text);
-}
+// function sanitizeText(string $text): string {
+//   while (str_contains($text, "  ")) {
+//     $text = str_replace("  ", " ", $text);
+//   }
+//   return trim($text);
+// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,16 +46,16 @@ function sanitizeText(string $text): string {
       showIntListWithColors();
     }
     ?>
-    <form method="post">
+    <form action="week1_extra.php" method="post">
       Sanitize Text <input type="text" name="rawText">
       <input type="submit">
     </form>
-    <?php
+    <!-- <?php
     if (isset($_POST) && isset($_POST["rawText"])) {
       echo "Original text (len=" . strlen($_POST['rawText']) . "): <pre>" . $_POST['rawText'] . "</pre> <br>";
       $newStr = sanitizeText($_POST['rawText']);
       echo "Sanitized text (len=" . strlen($newStr) . "): $newStr<br>";
     }
-    ?>
+    ?> -->
   </body>
 </html>
