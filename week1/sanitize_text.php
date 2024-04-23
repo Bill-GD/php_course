@@ -5,6 +5,9 @@
     <title>Document</title>
   </head>
   <body>
+    <form action="main.php" method="post">
+      <input type="submit" value="Back">
+    </form>
     <?php
     function sanitizeText(string $text): string {
       while (str_contains($text, "  ")) {

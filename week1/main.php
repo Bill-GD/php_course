@@ -1,6 +1,4 @@
 <?php
-// require_once "./week1_extra.php";
-
 function showIntList() {
   for ($i = 0; $i < 200; $i++) {
     echo $i + 1 . " ";
@@ -13,13 +11,6 @@ function showIntListWithColors() {
     echo "<font style='" . $style . "'>" . ($i + 1) . "</font> ";
   }
 }
-
-// function sanitizeText(string $text): string {
-//   while (str_contains($text, "  ")) {
-//     $text = str_replace("  ", " ", $text);
-//   }
-//   return trim($text);
-// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,16 +37,12 @@ function showIntListWithColors() {
       showIntListWithColors();
     }
     ?>
-    <form action="week1_extra.php" method="post">
+    <form action="sanitize_text.php" method="post">
       Sanitize Text <input type="text" name="rawText">
       <input type="submit">
     </form>
-    <!-- <?php
-    if (isset($_POST) && isset($_POST["rawText"])) {
-      echo "Original text (len=" . strlen($_POST['rawText']) . "): <pre>" . $_POST['rawText'] . "</pre> <br>";
-      $newStr = sanitizeText($_POST['rawText']);
-      echo "Sanitized text (len=" . strlen($newStr) . "): $newStr<br>";
-    }
-    ?> -->
+    <form action="login_form.php" method="post">
+      <input type="submit" value="Login">
+    </form>
   </body>
 </html>

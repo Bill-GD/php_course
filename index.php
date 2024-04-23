@@ -5,7 +5,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="./week1/week1.php" method="post">
+    <form action="./week1/main.php" method="post">
       To Week 1
       <input type="submit" name="name">
     </form>
