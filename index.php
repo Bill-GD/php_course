@@ -9,5 +9,9 @@
       To Week 1
       <input type="submit" name="name">
     </form>
+    <form action="./week2/main.php" method="post">
+      To Week 2
+      <input type="submit" name="name">
+    </form>
   </body>
 </html>
