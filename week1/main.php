@@ -11,19 +11,20 @@ function showIntListWithColors() {
     echo "<font style='" . $style . "'>" . ($i + 1) . "</font> ";
   }
 }
+include "../global/back_button.php";
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Visual Studio Code :: PHP</title>
+    <title>Week 1</title>
   </head>
   <body style="background-color: lightgray">
     <form method="post">
       Printing numbers from 1 to 200
       <button type="submit" name="normal">Print</button>
 
-      <br>
+      <br><br>
 
       Printing numbers from 1 to 200 (even: bold red, odd: italic blue)
       <button type="submit" name="styled">Print</button>
@@ -37,8 +38,9 @@ function showIntListWithColors() {
       showIntListWithColors();
     }
     ?>
-    <form action="sanitize_text.php" method="post">
-      Sanitize Text <input type="text" name="rawText">
+    <br><br>
+    <form action="normalize_text.php" method="post">
+      Normalize Text <input type="text" name="rawText">
       <input type="submit">
     </form>
     <form action="login_form.php" method="post">

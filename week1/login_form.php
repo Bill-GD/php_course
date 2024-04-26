@@ -2,6 +2,8 @@
 function checkLoginInfo(string $username, string $password): bool {
   return $username === 'admin' && $password === '12345';
 }
+
+include "../global/back_button.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,12 +11,9 @@ function checkLoginInfo(string $username, string $password): bool {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
   </head>
   <body>
-    <form action="main.php" method="post">
-      <input type="submit" value="Back">
-    </form>
     <form method="post">
       <label for="username">Username</label>
       <input type="text" name="username" id="username">
