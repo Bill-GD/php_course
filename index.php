@@ -8,5 +8,7 @@
     <a href="./week1/main.php"> Week 1 </a>
     <br>
     <a href="./week2/main.php"> Week 2 </a>
+    <br>
+    <a href="./week3/main.php"> Week 3 </a>
   </body>
 </html>
