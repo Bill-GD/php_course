@@ -24,7 +24,11 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$db_result = $conn->query('select * from qlnv where username = "' . $username . '" and password = "' . $password . '"')->fetch_assoc();
+$query = 'select * from qlnv where username = "' . $username . '" and password = "';
+if (isset($_REQUEST['loginWithSHA1'])) $query .= sha1($password) . '"';
+else $query .= $password . '"';
+
+$db_result = $conn->query($query)->fetch_assoc();
 
 if ($db_result === false || $db_result === null) {
   header('Location: login.htm');
