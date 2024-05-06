@@ -19,7 +19,7 @@ include "../global/back_button.php";
     <meta charset="utf-8">
     <title>Week 1</title>
   </head>
-  <body style="background-color: lightgray">
+  <body>
     <form method="post">
       Printing numbers from 1 to 200
       <button type="submit" name="normal">Print</button>

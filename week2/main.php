@@ -7,7 +7,7 @@ include "../global/back_button.php";
     <meta charset="utf-8">
     <title>Week 2</title>
   </head>
-  <body style="background-color: lightgray">
+  <body>
     <a href='check_login.php'> Check Login </a>
     <br>
     <a href='query_account.php'> Query Account </a>

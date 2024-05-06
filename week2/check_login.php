@@ -15,7 +15,7 @@ include "../global/back_button.php";
     <meta charset="utf-8">
     <title>Check Login</title>
   </head>
-  <body style="background-color: lightgray">
+  <body>
     <form method="post">
       <label for="username">Username</label>
       <input type="text" name="username" id="username">
