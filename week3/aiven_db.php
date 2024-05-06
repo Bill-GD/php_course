@@ -1,6 +1,8 @@
 <?php
 
-$uri = "mysql://avnadmin:************************@mysql-issue-tracker-dc87b75-issue-tracking-app.h.aivencloud.com:13387/issue_tracker_db?ssl-mode=REQUIRED";
+include_once "../config.php"; // excluded from source control
+
+$uri = "mysql://{$aiven_username}:{$aiven_password}@mysql-issue-tracker-dc87b75-issue-tracking-app.h.aivencloud.com:13387/issue_tracker_db?ssl-mode=REQUIRED";
 
 $fields = parse_url($uri);
 
