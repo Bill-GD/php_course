@@ -18,6 +18,7 @@ if ($files === false) {
   }, array_diff($files, ['.', '..']));
 }
 
+
 if (isset($_GET['sort']) && isset($_GET['order'])) {
   $sort_types = ['name', 'type', 'time', 'size'];
 
@@ -50,7 +51,7 @@ foreach ($files as $file) {
   echo "<tr>
     <td>" . $file[0] . "</td>
     <td>" . $file[1] . "</td>
-    <td>" . $file[2] . "</td>
+    <td>" . date("d/m/Y H:i:s", $file[2]) . "</td>
     <td>" . $file[3] . "</td>
     </tr>";
 }
